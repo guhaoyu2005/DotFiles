@@ -8,14 +8,59 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-" ADD YOUR PLUGIN
+" PLUGINS
+Plugin 'molokai'
+Plugin 'The-NERD-tree'
+Plugin 'Valloric/YouCompleteMe' 
+Plugin 'scrooloose/syntastic'
+Plugin 'powerline/powerline'
 call vundle#end()
 filetype plugin indent on
 "Vundle Section End
 
-set background=dark
+"Editor cfgs
 colorscheme molokai
+set background=dark
 set number
 set cursorline
 set ruler
 set tabstop=4
+set autoindent
+set smartindent
+
+set guifont=Monaco:h12
+
+filetype on 
+syntax on
+
+
+let NERDTreeWinSize=20
+let NERDTreeWinPos="left"
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '\.o$']
+
+let g:molokai_original=1
+
+"Multi-lang
+if has("multi_byte")
+	set encoding=utf-8
+	set termencoding=utf-8
+	set formatoptions+=mM
+	set fencs=utf-8,gbk
+	if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
+		set ambiwidth=double
+	endif
+endif
+
+"Keymaps normal
+nmap  <F5> :NERDTreeToggle<cr>
+
+"Keymaps insert
+imap <c-a> <ESC>0i
+imap <c-e> <ESC>$A
+imap <c-q> <ESC>
+inoremap ( ()<LEFT>
+imap { {<CR>}<ESC>kA<CR>
+"inoremap { {<cr><cr>}<UP><ESC>$A
+
+"functions
+
