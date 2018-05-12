@@ -13,14 +13,23 @@ Plugin 'molokai'
 Plugin 'The-NERD-tree'
 Plugin 'Valloric/YouCompleteMe' 
 Plugin 'scrooloose/syntastic'
-Plugin 'powerline/powerline'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'Chiel92/vim-autoformat'
 call vundle#end()
 filetype plugin indent on
 "Vundle Section End
 
 "Editor cfgs
 colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
 set background=dark
+
+set laststatus=2
+set t_Co=256
+let g:Powerline_symbols= 'unicode'
+set encoding=utf8
+
 set number
 set cursorline
 set ruler
@@ -30,9 +39,10 @@ set smartindent
 
 set guifont=Monaco:h12
 
+set shell=/bin/bash
+
 filetype on 
 syntax on
-
 
 let NERDTreeWinSize=20
 let NERDTreeWinPos="left"
