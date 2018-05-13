@@ -8,7 +8,11 @@ Install Vundle first:
 
 ## Install plugins
 
+Open VIM, and do
+
 `:PluginInstall`
 
-For YCM, cd to YCM directory, and run *install.py*
+For YCM, cd to YCM directory 
+`~/.vim/bundle/YouCompleteMe`
+Then run *install.py*
 
