@@ -12,7 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
 " PLUGINS
 Plugin 'molokai'
 Plugin 'The-NERD-tree'
-"Plugin 'Valloric/YouCompleteMe' 
+
+if has("macunix")
+		Plugin 'Valloric/YouCompleteMe' 
+endif
+
 Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'Chiel92/vim-autoformat'
@@ -38,8 +42,12 @@ set tabstop=4
 set autoindent
 set smartindent
 
-"set guifont=Monaco:h12
-set guifont=Monospace\ 12
+if has("macunix")
+	set guifont=Monaco:h12
+else
+	set guifont=Monospace\ 12
+endif
+
 if has("gui_running")
 		set lines=70 columns=135
 else
