@@ -3,6 +3,7 @@
 "Ver 0.1
 "
 "Vundle Section Start
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 " PLUGINS
 Plugin 'molokai'
 Plugin 'The-NERD-tree'
-Plugin 'Valloric/YouCompleteMe' 
+"Plugin 'Valloric/YouCompleteMe' 
 Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'Chiel92/vim-autoformat'
@@ -37,9 +38,18 @@ set tabstop=4
 set autoindent
 set smartindent
 
-set guifont=Monaco:h12
-
-set shell=/bin/bash
+"set guifont=Monaco:h12
+set guifont=Monospace\ 12
+if has("gui_running")
+		set lines=70 columns=135
+else
+		if exists("+lines")
+				set lines=50
+		endif
+		if exists("+columns")
+				set columns=80
+		endif
+endif
 
 filetype on 
 syntax on
@@ -50,9 +60,10 @@ let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '\.o$']
 
 let g:molokai_original=1
 
+set encoding=utf-8
+
 "Multi-lang
 if has("multi_byte")
-	set encoding=utf-8
 	set termencoding=utf-8
 	set formatoptions+=mM
 	set fencs=utf-8,gbk
