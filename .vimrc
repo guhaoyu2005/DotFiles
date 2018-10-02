@@ -87,7 +87,7 @@ nmap  <F5> :NERDTreeToggle<cr>
 imap <c-a> <ESC>0i
 imap <c-e> <ESC>$A
 imap <c-q> <ESC>
-inoremap ( ()<LEFT>
+"inoremap ( ()<LEFT>
 imap { {<CR>}<ESC>kA<CR>
 "inoremap { {<cr><cr>}<UP><ESC>$A
 
