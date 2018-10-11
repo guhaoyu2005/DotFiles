@@ -38,7 +38,9 @@ set encoding=utf8
 set number
 set cursorline
 set ruler
-set tabstop=4
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
 set autoindent
 set smartindent
 
@@ -49,14 +51,27 @@ else
 endif
 
 if has("gui_running")
+	if has("unix")
+		set lines=100 columns=270
+	else
 		set lines=70 columns=135
+	endif
 else
+	if has("unix")
+		if exists("+lines")
+			set lines=80
+		endif
+		if exists("+columns")
+			set columns=160
+		endif
+	else
 		if exists("+lines")
 				set lines=50
 		endif
 		if exists("+columns")
 				set columns=80
 		endif
+	endif
 endif
 
 filetype on 
