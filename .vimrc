@@ -13,8 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'molokai'
 Plugin 'The-NERD-tree'
 
-if has("macunix")
-		Plugin 'Valloric/YouCompleteMe' 
+if has("unix")
+    Plugin 'Valloric/YouCompleteMe' 
 endif
 
 Plugin 'scrooloose/syntastic'
