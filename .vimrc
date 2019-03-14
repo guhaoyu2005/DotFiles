@@ -5,6 +5,7 @@
 "Vundle Section Start
 
 set nocompatible
+set backspace=2
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
