@@ -5,6 +5,7 @@
 "Vundle Section Start
 
 set nocompatible
+set backspace=2
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -13,8 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'molokai'
 Plugin 'The-NERD-tree'
 
-if has("macunix")
-		Plugin 'Valloric/YouCompleteMe' 
+if has("unix")
+    Plugin 'Valloric/YouCompleteMe' 
 endif
 
 Plugin 'scrooloose/syntastic'
@@ -43,6 +44,7 @@ set softtabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
+set mouse=a
 
 if has("macunix")
 	set guifont=Monaco:h12
@@ -51,9 +53,14 @@ else
 endif
 
 if has("gui_running")
-	if has("unix")
+	if has("unix") 
+	    if has("macunix")	
+		set lines=70 columns=135
+	    else 
 		set lines=100 columns=270
+	    endif
 	else
+		"set lines=35 columns=60
 		set lines=70 columns=135
 	endif
 else
