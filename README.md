@@ -1,4 +1,4 @@
-# VimCfg
+# Vim
 
 ## Prerequisite
 
@@ -16,3 +16,4 @@ For YCM, cd to YCM directory
 `~/.vim/bundle/YouCompleteMe`
 Then run *install.py*
 
+# tmux
