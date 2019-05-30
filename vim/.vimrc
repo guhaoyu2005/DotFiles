@@ -21,6 +21,7 @@ endif
 Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'Yggdroot/indentLine'
 call vundle#end()
 filetype plugin indent on
 "Vundle Section End
@@ -89,6 +90,8 @@ let NERDTreeWinPos="left"
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$', '\.o$']
 
 let g:molokai_original=1
+
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 set encoding=utf-8
 

@@ -17,3 +17,7 @@ For YCM, cd to YCM directory
 Then run *install.py*
 
 # tmux
+
+# Xterm
+Run
+`xrdb -merge ~/.Xresources`
