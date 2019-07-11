@@ -1,5 +1,10 @@
-xterm*faceName: DejaVu Sans Mono Book
+xterm*renderFont: true
+xterm*faceName: DejaVu Sans Mono Book:style=Regular
 xterm*faceSize: 10
+
+xterm*locale: UTF-8
+
+xterm*termName: xterm-256color
 
 xterm*loginshell: true
 
@@ -33,5 +38,6 @@ xterm*color15: rgb:fc/fc/fc
 xterm*VT100.Translations: #override \
     Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
 
 Xft.dpi: 192
