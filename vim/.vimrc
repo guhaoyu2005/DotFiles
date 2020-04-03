@@ -40,13 +40,15 @@ set encoding=utf8
 set number
 set cursorline
 set ruler
-set tabstop=4
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
 set mouse=a
 
+set list
+set listchars=tab:>-
 if has("macunix")
 	set guifont=Monaco:h12
 else
