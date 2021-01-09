@@ -47,10 +47,17 @@ set autoindent
 set smartindent
 set mouse=a
 
+set textwidth=80
+set colorcolumn=+1
+augroup vimrc
+   autocmd!
+   autocmd ColorScheme * highlight ColorColumn guibg=#3E3D32 ctermbg=235
+augroup END
+
 set list
 set listchars=tab:>-
 if has("macunix")
-	set guifont=Monaco:h12
+	set guifont=Monaco:h14
 else
 	set guifont=Monospace\ 12
 endif
