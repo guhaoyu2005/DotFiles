@@ -76,10 +76,10 @@ if has("gui_running")
 else
 	if has("unix")
 		if exists("+lines")
-			set lines=80
+			"set lines=80
 		endif
 		if exists("+columns")
-			set columns=160
+			"set columns=160
 		endif
 	else
 		if exists("+lines")
