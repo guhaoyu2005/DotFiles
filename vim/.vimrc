@@ -125,6 +125,12 @@ imap <c-q> <ESC>
 imap { {<CR>}<ESC>kA<CR>
 "inoremap { {<cr><cr>}<UP><ESC>$A
 
+"Ctrl+c/v
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+
+
 "tmux
 if &term =~ '^screen'
     " tmux will send xterm-style keys when its xterm-keys option is on

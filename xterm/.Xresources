@@ -1,6 +1,7 @@
 xterm*renderFont: true
 xterm*faceName: DejaVu Sans Mono Book:style=Regular
-xterm*faceSize: 10
+xterm*faceSize: 8
+xterm*geometry: 80x24
 
 xterm*locale: UTF-8
 
