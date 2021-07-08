@@ -38,7 +38,8 @@ xterm*color15: rgb:fc/fc/fc
 
 xterm*VT100.Translations: #override \
     Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
-
+    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+    Shift <KeyPress> Home:  scroll-to(begin)	\n\
+    Shift <KeyPress> End:   scroll-to(end)	\n\
 
 Xft.dpi: 192

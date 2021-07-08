@@ -66,8 +66,9 @@ if has("gui_running")
 	if has("unix") 
 	    if has("macunix")	
 		set lines=70 columns=135
-	    else 
-		set lines=100 columns=270
+	    else
+		set guifont=Monospace\ 8
+		set lines=70 columns=135
 	    endif
 	else
 		"set lines=35 columns=60
