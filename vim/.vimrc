@@ -48,6 +48,7 @@ set smartindent
 set mouse=a
 
 set textwidth=80
+set nowrap
 set colorcolumn=+1
 augroup vimrc
    autocmd!
@@ -103,6 +104,9 @@ let g:molokai_original=1
 
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
+" Disable quote concealing in JSON files
+let g:vim_json_conceal=0
+
 set encoding=utf-8
 
 "Multi-lang
@@ -123,7 +127,9 @@ imap <c-a> <ESC>0i
 imap <c-e> <ESC>$A
 imap <c-q> <ESC>
 "inoremap ( ()<LEFT>
-imap { {<CR>}<ESC>kA<CR>
+"imap { {<CR>}<ESC>kA<CR>
+imap { {<SPACE>}<ESC>hha
+
 "inoremap { {<cr><cr>}<UP><ESC>$A
 
 "Ctrl+c/v
