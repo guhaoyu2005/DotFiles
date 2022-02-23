@@ -21,3 +21,16 @@ Then run *install.py*
 # Xterm
 Run
 `xrdb -merge ~/.Xresources`
+
+# fluxbox
+
+Installation
+
+`pkg ins fluxbox volumeicon htop`
+
+For better visual effect, install compton, etc.(optional)
+
+# conky
+Installation
+
+`pkg ins conky`

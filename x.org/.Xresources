@@ -43,3 +43,5 @@ xterm*VT100.Translations: #override \
     Shift <KeyPress> End:   scroll-to(end)	\n\
 
 Xft.dpi: 192
+Xcursor.size: 48
+
