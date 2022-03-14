@@ -1,6 +1,6 @@
 xterm*renderFont: true
 xterm*faceName: DejaVu Sans Mono Book:style=Regular
-xterm*faceSize: 8
+xterm*faceSize: 8 
 xterm*geometry: 80x24
 
 xterm*locale: UTF-8
@@ -42,6 +42,12 @@ xterm*VT100.Translations: #override \
     Shift <KeyPress> Home:  scroll-to(begin)	\n\
     Shift <KeyPress> End:   scroll-to(end)	\n\
 
-Xft.dpi: 192
+Xft.dpi: 192 
+Xft.antialias: 1
+Xft.autohint:   1
+Xft.hinting:    1
+Xft.hintstyle:  hintmedium
+Xft.lcdfilter:  lcddefault
+Xft.rgba:   none
 Xcursor.size: 48
 

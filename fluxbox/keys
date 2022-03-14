@@ -141,7 +141,7 @@ Control 1 :Exec xterm
 Control 2 :Exec firefox
 Control 3 :Exec pcmanfm
 Control 4 :Exec gvim
-Control 5 :Exec xcalc
+Control 5 :Exec galculator
 
 ### BASIC TILING WINDOWS ###
 # Make active window 1/2 of the screen
@@ -166,3 +166,15 @@ Mod4 d :MacroCmd {ResizeTo 30% 30%} {MoveTo 60% 30% TopLeft}
 Mod4 z :MacroCmd {ResizeTo 30% 30%} {MoveTo 00 60% TopLeft}
 Mod4 x :MacroCmd {ResizeTo 30% 30%} {MoveTo 30% 60% TopLeft}
 Mod4 c :MacroCmd {ResizeTo 30% 30%} {MoveTo 60% 60% TopLeft}
+
+# 3x3 moving
+Mod4 Shift q :MacroCmd {MoveTo 00 00 TopLeft}
+Mod4 Shift w :MacroCmd {MoveTo 30% 00 TopLeft}
+Mod4 Shift e :MacroCmd {MoveTo 60% 00 TopLeft}
+Mod4 Shift a :MacroCmd {MoveTo 00 30% TopLeft}
+Mod4 Shift s :MacroCmd {MoveTo 30% 30% TopLeft}
+Mod4 Shift d :MacroCmd {MoveTo 60% 30% TopLeft}
+Mod4 Shift z :MacroCmd {MoveTo 00 60% TopLeft}
+Mod4 Shift x :MacroCmd {MoveTo 30% 60% TopLeft}
+Mod4 Shift c :MacroCmd {MoveTo 60% 60% TopLeft}
+

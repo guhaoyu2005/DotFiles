@@ -68,7 +68,7 @@ if has("gui_running")
 	    if has("macunix")	
 		set lines=70 columns=135
 	    else
-		set guifont=Monospace\ 8
+		set guifont=Dejavu\ Sans\ Mono\ Book\ 8 
 		set lines=70 columns=135
 	    endif
 	else
