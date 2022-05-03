@@ -18,13 +18,16 @@
 [encoding] {UTF-8}
       [exec] (xterm) {xterm}
       [exec] (firefox) {firefox}
-      [exec] (chrome) {chrome}
       [exec] (gvim) {gvim}
       [exec] (pcmanfm) {pcmanfm}
       [exec] (galculator) {galculator}
+[separator]
+      [exec] (vscode) {code-oss}
+      [exec] (chrome) {chrome}
 [submenu] (More Applications)
       [exec] ([sudo]pcmanfm) {xterm -e sudo pcmanfm}
 [end]
+[separator]
 [submenu] (System Tools)
       [exec]   (top) {xterm -e top}
       [exec]   (htop) {xterm -e htop}

@@ -157,24 +157,24 @@ Mod4 Mod1 w :MacroCmd {ResizeTo 50% 50%} {MoveTo 00 00 TopRight}
 Mod4 Mod1 a :MacroCmd {ResizeTo 50% 50%} {MoveTo 00 00 BottomLeft}
 Mod4 Mod1 s :MacroCmd {ResizeTo 50% 50%} {MoveTo 00 00 BottomRight}
 # 3x3 tiling
-Mod4 q :MacroCmd {ResizeTo 30% 30%} {MoveTo 00 00 TopLeft}
-Mod4 w :MacroCmd {ResizeTo 30% 30%} {MoveTo 30% 00 TopLeft}
-Mod4 e :MacroCmd {ResizeTo 30% 30%} {MoveTo 60% 00 TopLeft}
-Mod4 a :MacroCmd {ResizeTo 30% 30%} {MoveTo 00 30% TopLeft}
-Mod4 s :MacroCmd {ResizeTo 30% 30%} {MoveTo 30% 30% TopLeft}
-Mod4 d :MacroCmd {ResizeTo 30% 30%} {MoveTo 60% 30% TopLeft}
-Mod4 z :MacroCmd {ResizeTo 30% 30%} {MoveTo 00 60% TopLeft}
-Mod4 x :MacroCmd {ResizeTo 30% 30%} {MoveTo 30% 60% TopLeft}
-Mod4 c :MacroCmd {ResizeTo 30% 30%} {MoveTo 60% 60% TopLeft}
+Mod4 q :MacroCmd {ResizeTo 30% 32%} {MoveTo 00 00 TopLeft}
+Mod4 w :MacroCmd {ResizeTo 30% 32%} {MoveTo 30% 00 TopLeft}
+Mod4 e :MacroCmd {ResizeTo 30% 32%} {MoveTo 60% 00 TopLeft}
+Mod4 a :MacroCmd {ResizeTo 30% 32%} {MoveTo 00 32% TopLeft}
+Mod4 s :MacroCmd {ResizeTo 30% 32%} {MoveTo 30% 32% TopLeft}
+Mod4 d :MacroCmd {ResizeTo 30% 32%} {MoveTo 60% 32% TopLeft}
+Mod4 z :MacroCmd {ResizeTo 30% 32%} {MoveTo 00 64% TopLeft}
+Mod4 x :MacroCmd {ResizeTo 30% 32%} {MoveTo 30% 64% TopLeft}
+Mod4 c :MacroCmd {ResizeTo 30% 32%} {MoveTo 60% 64% TopLeft}
 
 # 3x3 moving
 Mod4 Shift q :MacroCmd {MoveTo 00 00 TopLeft}
 Mod4 Shift w :MacroCmd {MoveTo 30% 00 TopLeft}
 Mod4 Shift e :MacroCmd {MoveTo 60% 00 TopLeft}
-Mod4 Shift a :MacroCmd {MoveTo 00 30% TopLeft}
-Mod4 Shift s :MacroCmd {MoveTo 30% 30% TopLeft}
-Mod4 Shift d :MacroCmd {MoveTo 60% 30% TopLeft}
-Mod4 Shift z :MacroCmd {MoveTo 00 60% TopLeft}
-Mod4 Shift x :MacroCmd {MoveTo 30% 60% TopLeft}
-Mod4 Shift c :MacroCmd {MoveTo 60% 60% TopLeft}
+Mod4 Shift a :MacroCmd {MoveTo 00 32% TopLeft}
+Mod4 Shift s :MacroCmd {MoveTo 30% 32% TopLeft}
+Mod4 Shift d :MacroCmd {MoveTo 60% 32% TopLeft}
+Mod4 Shift z :MacroCmd {MoveTo 00 64% TopLeft}
+Mod4 Shift x :MacroCmd {MoveTo 30% 64% TopLeft}
+Mod4 Shift c :MacroCmd {MoveTo 60% 64% TopLeft}
 
