@@ -178,3 +178,5 @@ Mod4 Shift z :MacroCmd {MoveTo 00 64% TopLeft}
 Mod4 Shift x :MacroCmd {MoveTo 30% 64% TopLeft}
 Mod4 Shift c :MacroCmd {MoveTo 60% 64% TopLeft}
 
+# lock screen & activate xscreensaver
+Mod4 l :Exec {xscreensaver-command -activate}

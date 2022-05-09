@@ -9,7 +9,7 @@ import urllib.request
 import traceback    
 import socket
 
-DEFAULT_MSG = "[LOCAL]127.0.0.1"
+DEFAULT_MSG = "127.0.0.1[Local]"
 
 IP_URL = 'https://api.ipify.org/?format=json'
 IPINFO_URL = 'https://ipinfo.io/{}/geo'

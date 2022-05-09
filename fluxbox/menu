@@ -24,11 +24,11 @@
 [separator]
       [exec] (vscode) {code-oss}
       [exec] (chrome) {chrome}
-[submenu] (More Applications)
+[submenu] (More applications)
       [exec] ([sudo]pcmanfm) {xterm -e sudo pcmanfm}
 [end]
 [separator]
-[submenu] (System Tools)
+[submenu] (System tools)
       [exec]   (top) {xterm -e top}
       [exec]   (htop) {xterm -e htop}
       [exec]   (compton-conf) {compton-conf}
@@ -51,6 +51,12 @@
       [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
       [separator]
       [exit] (Exit)
+[end]
+[submenu] (Chassis)
+      [exec] (lock) {xscreensaver-command -activate}
+      [separator]
+      [exec] (reboot) {xterm -e sudo reboot}
+      [exec] (poweroff) {xterm -e sudo poweroff}
 [end]
 [endencoding]
 [end]
