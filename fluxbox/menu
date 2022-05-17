@@ -18,8 +18,8 @@
 [encoding] {UTF-8}
       [exec] (xterm) {xterm}
       [exec] (firefox) {firefox}
-      [exec] (gvim) {gvim}
       [exec] (pcmanfm) {pcmanfm}
+      [exec] (gvim) {gvim}
       [exec] (galculator) {galculator}
 [separator]
       [exec] (vscode) {code-oss}
