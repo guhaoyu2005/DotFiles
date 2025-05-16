@@ -15,7 +15,7 @@ xmodmap "/home/hao/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 #fbsetroot -solid '#32436B' &
-fbsetbg -a /usr/home/hao/.fluxbox/background.jpg &
+#fbsetbg -a /usr/home/hao/.fluxbox/background.jpg &
 volumeicon &
 conky -p 5 &
 
